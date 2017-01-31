@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "111404129802",
+    "firebase_url": "https://earth-matters.firebaseio.com",
+    "project_id": "earth-matters",
+    "storage_bucket": "earth-matters.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111404129802:android:e6054a06df092f98",
+        "android_client_info": {
+          "package_name": "earthdayflint.earthmatters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111404129802-r35pveq7amh391hfvs4tvdrllqjr81gr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "earthdayflint.earthmatters",
+            "certificate_hash": "40909A1601A379461EF7D05996FAA3D738118211"
+          }
+        },
+        {
+          "client_id": "111404129802-p0bitme071liglhporj1dio1a4s1ancn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo47dMg9FrGhXJhbekSSG02O9WSD7PKOA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111404129802-p0bitme071liglhporj1dio1a4s1ancn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111404129802:android:8183e9cd795ea5c4",
+        "android_client_info": {
+          "package_name": "com.umflint.csc.earthmattersv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111404129802-a58eb13769vgjbpspjmf2dpnuhsf1tnu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umflint.csc.earthmattersv2",
+            "certificate_hash": "40909A1601A379461EF7D05996FAA3D738118211"
+          }
+        },
+        {
+          "client_id": "111404129802-p0bitme071liglhporj1dio1a4s1ancn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo47dMg9FrGhXJhbekSSG02O9WSD7PKOA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111404129802-p0bitme071liglhporj1dio1a4s1ancn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

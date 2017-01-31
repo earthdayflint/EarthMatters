@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.umflint.csc.earthmattersv2.ux.CreateEventActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/eventNameEditText"
+        android:hint="@string/event_name" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/eventNameEditText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/timeTextView"
+        android:clickable="true"
+        android:text="@string/start_date"
+        android:textSize="18sp"
+        android:layout_below="@+id/place_autocomplete_fragment"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/endDateTextView"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/timeTextView"
+        android:layout_alignBottom="@+id/timeTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="66dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@+id/timeTextView"
+    android:weightSum="1"
+    android:id="@+id/eventDescriptionTextViewLayout">
+
+    <EditText
+        android:layout_width="0dp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:layout_marginTop="10dp"
+        android:id="@+id/eventDescriptionTextView"
+        android:hint="@string/add_event_description"
+        android:gravity="top"
+        android:scrollHorizontally="false"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+
+    <CheckBox
+        android:text="@string/featured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/featuredCheckBox"
+        android:layout_below="@+id/eventDescriptionTextViewLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

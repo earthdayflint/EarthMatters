@@ -1,0 +1,23 @@
+<tabs>
+    <tab
+        id="@+id/tab_description"
+        barColorWhenSelected="#00274c"
+        icon="@drawable/details"
+        title="Description" />
+    <tab
+        id="@+id/tab_booths"
+        barColorWhenSelected="#00274c"
+        icon="@drawable/ic_assistant_white_24dp"
+        title="Booths" />
+    <tab
+        id="@+id/tab_maps"
+        barColorWhenSelected="#00274c"
+        icon="@drawable/map"
+        title="Maps" />
+
+    <tab
+        id="@+id/tab_schedule"
+        barColorWhenSelected="#00274c"
+        icon="@drawable/clock"
+        title="Schedule" />
+</tabs>
