@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity
     private NavigationView navigationView;
     private Menu nav_Menu;
 
-    //git teest
+    //git  2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
