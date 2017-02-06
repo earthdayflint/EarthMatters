@@ -8,10 +8,7 @@ import android.view.View;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
-import com.umflint.csc.earthmattersv2.R;
 import com.umflint.csc.earthmattersv2.model.BoothModel;
-import com.umflint.csc.earthmattersv2.utilities.Utilities;
-import com.umflint.csc.earthmattersv2.ux.ExpandedCardActivity;
 
 /**
  * Created by Benjamin on 1/23/2017.
@@ -31,14 +28,14 @@ public class BoothCardContentAdapter extends FirebaseRecyclerAdapter <BoothModel
     }
     @Override
     protected void populateViewHolder(final BoothCardViewHolder viewHolder, final BoothModel model, final int position) {
-        viewHolder.boothNameTextView.setText(model.getSubEventName());
-        viewHolder.boothDescriptionTextView.setText(model.getSubEventDescription());
-        viewHolder.boothNumberTextView.setText("Booth #" + Long.toString(model.getSubEventBoothNumber()));
+        viewHolder.boothNameTextView.setText(model.getBoothName());
+        viewHolder.boothDescriptionTextView.setText(model.getBoothDescription());
+        viewHolder.boothNumberTextView.setText("Booth #" + Long.toString(model.getBoothNumber()));
 
         viewHolder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newsIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://" + model.getSubEventWebSite()));
+                Intent newsIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://" + model.getBoothWebsite()));
                 activity.startActivity(newsIntent);
             }
         });

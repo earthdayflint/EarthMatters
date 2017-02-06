@@ -5,50 +5,50 @@ package com.umflint.csc.earthmattersv2.model;
  */
 
 public class BoothModel {
-    private String subEventName;
-    private long subEventBoothNumber;
-    private String subEventDescription;
-    private String subEventWebSite;
+    private String boothName;
+    private long boothNumber;
+    private String boothDescription;
+    private String boothWebsite;
 
     public BoothModel() {
     }
 
     public BoothModel(String boothName, long boothNumber, String boothDescription, String boothWebsite) {
-        this.subEventName = boothName;
-        this.subEventBoothNumber = boothNumber;
-        this.subEventDescription = boothDescription;
-        this.subEventWebSite = boothWebsite;
+        this.boothName = boothName;
+        this.boothNumber = boothNumber;
+        this.boothDescription = boothDescription;
+        this.boothWebsite = boothWebsite;
     }
 
-    public String getSubEventWebSite() {
-        return subEventWebSite;
+    public String getBoothWebsite() {
+        return boothWebsite;
     }
 
-    public void setSubEventWebSite(String subEventWebSite) {
-        this.subEventWebSite = subEventWebSite;
+    public void setBoothWebsite(String boothWebsite) {
+        this.boothWebsite = boothWebsite;
     }
 
-    public String getSubEventName() {
-        return subEventName;
+    public String getBoothName() {
+        return boothName;
     }
 
-    public void setSubEventName(String subEventName) {
-        this.subEventName = subEventName;
+    public void setBoothName(String boothName) {
+        this.boothName = boothName;
     }
 
-    public long getSubEventBoothNumber() {
-        return subEventBoothNumber;
+    public long getBoothNumber() {
+        return boothNumber;
     }
 
-    public void setSubEventBoothNumber(long subEventBoothNumber) {
-        this.subEventBoothNumber = subEventBoothNumber;
+    public void setBoothNumber(long boothNumber) {
+        this.boothNumber = boothNumber;
     }
 
-    public String getSubEventDescription() {
-        return subEventDescription;
+    public String getBoothDescription() {
+        return boothDescription;
     }
 
-    public void setSubEventDescription(String subEventDescription) {
-        this.subEventDescription = subEventDescription;
+    public void setBoothDescription(String boothDescription) {
+        this.boothDescription = boothDescription;
     }
 }

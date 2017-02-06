@@ -37,13 +37,13 @@ public class CreateEventActivity extends AppCompatActivity {
     private TextView endTimeTextView;
     private EditText eventNameEditText;
     private EditText eventDescriptionEditText;
-    private CheckBox featuredCheckBox;
     private String endDateString;
     private String startDateString;
     private String eventLocation;
+    private Button addEventImageButton;
+    private Button addEventButton;
     private String coverName;
     private String scheduleName;
-    private int featured = 0;
     private Uri imageUri;
     private Uri pdfUri;
 
@@ -60,7 +60,32 @@ public class CreateEventActivity extends AppCompatActivity {
         endTimeTextView = (TextView) findViewById(R.id.endDateTextView);
         eventDescriptionEditText = (EditText) findViewById(R.id.eventDescriptionTextView);
         eventNameEditText = (EditText) findViewById(R.id.eventNameEditText);
-        featuredCheckBox = (CheckBox) findViewById(R.id.featuredCheckBox);
+        addEventButton = (Button) findViewById(R.id.addEventButton);
+        addEventImageButton = (Button) findViewById(R.id.addEventImageButton);
+
+        addEventImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+                intent.addCategory(Intent.CATEGORY_OPENABLE);
+                intent.setType("*/*");
+
+                startActivityForResult(intent, READ_REQUEST_CODE_IMAGE);
+            }
+        });
+
+        addEventButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(imageUri != null){
+                    coverName = Long.toString(System.currentTimeMillis());
+                    StorageReference imageRef = storageRef.child(coverName);
+                    imageRef.putFile(imageUri);
+                }
+                addEvent();
+                finish();
+            }
+        });
 
         eventNameEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_WORDS);
 
@@ -98,22 +123,13 @@ public class CreateEventActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        /*if(requestCode == READ_REQUEST_CODE_IMAGE && resultCode == Activity.RESULT_OK){
+        if(requestCode == READ_REQUEST_CODE_IMAGE && resultCode == Activity.RESULT_OK){
             imageUri = null;
             if(data != null){
                 imageUri = data.getData();
-                selectImageButton.setText(getDocumentName(imageUri));
+                addEventImageButton.setText(getDocumentName(imageUri));
             }
-        } else if(requestCode == READ_REQUEST_CODE_DOC && resultCode == Activity.RESULT_OK){
-            pdfUri = null;
-            if(data != null){
-                pdfUri = data.getData();
-                String uriName = getDocumentName(pdfUri);
-                selectScheduleButton.setText(uriName);
-                scheduleName = uriName;
-
-            }
-        }*/
+        }
     }
 
     public void setStartDateString(String date){
@@ -154,9 +170,5 @@ public class CreateEventActivity extends AppCompatActivity {
         DatabaseReference ref = database.getReference();
         EventModel newEvent = new EventModel(eventNameEditText.getText().toString(), eventLocation, eventDescriptionEditText.getText().toString(), startDateString, endDateString, coverName, scheduleName);
         ref.child("Events").child(coverName).setValue(newEvent);
-        if (featured ==1){
-            ref.child("Featured").child("featured").removeValue();
-            ref.child("Featured").child("featured").setValue(newEvent);
-        }
     }
 }
