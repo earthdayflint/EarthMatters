@@ -12,17 +12,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -34,12 +34,11 @@ import com.squareup.picasso.Picasso;
 import com.umflint.csc.earthmattersv2.adaptor.BoothCardContentAdapter;
 import com.umflint.csc.earthmattersv2.adaptor.BoothCardViewHolder;
 import com.umflint.csc.earthmattersv2.model.BoothModel;
+import com.umflint.csc.earthmattersv2.model.ScheduleModel;
 import com.umflint.csc.earthmattersv2.utilities.CalendarPopulator;
 import com.umflint.csc.earthmattersv2.utilities.EventMap;
 import com.umflint.csc.earthmattersv2.R;
 import com.umflint.csc.earthmattersv2.utilities.Utilities;
-
-import java.util.List;
 
 public class ExpandedCardActivity extends AppCompatActivity {
 
@@ -61,8 +60,9 @@ public class ExpandedCardActivity extends AppCompatActivity {
     private EventMap eventMap;
     private StorageReference storageRef;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myref;
-    private List<BoothModel> boothList;
+    private DatabaseReference boothReference;
+    private DatabaseReference scheduleReference;
+    private ListView scheduleListView;
     private RecyclerView recyclerView;
     private FloatingActionButton fabBooth;
     private boolean isAdmin;
@@ -85,23 +85,42 @@ public class ExpandedCardActivity extends AppCompatActivity {
         calendarPopulator = new CalendarPopulator(this);
         eventMap = new EventMap(this);
         activity = this;
+        scheduleListView = (ListView) findViewById(R.id.scheduleListView);
         recyclerView = (RecyclerView) findViewById(R.id.boothRecyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         final ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
-        myref = database.getReference("Events").
+        boothReference = database.getReference("Events").
                 child(getIntent().getExtras().getString(getString(R.string.extrasCoverName))).child("Booths");
-        Log.d("DATABASE", myref.toString());
+        scheduleReference = database.getReference("Events").
+                child(getIntent().getExtras().getString(getString(R.string.extrasCoverName))).child("SubEvents");
 
         BoothCardContentAdapter boothCardContentAdapter = new BoothCardContentAdapter(
                 BoothModel.class,
                 R.layout.fragment_booth_card,
                 BoothCardViewHolder.class,
-                myref,
+                boothReference,
                 this,
                 this);
 
         recyclerView.setAdapter(boothCardContentAdapter);
+
+        FirebaseListAdapter<ScheduleModel> firebaseListAdapter = new FirebaseListAdapter<ScheduleModel>(this, ScheduleModel.class,
+                R.layout.fragment_schedule_card, scheduleReference ) {
+            @Override
+            protected void populateView(View v, ScheduleModel model, int position) {
+                TextView subEventName = (TextView) v.findViewById(R.id.scheduleCardNameTextView);
+                TextView subEventDescription = (TextView) v.findViewById(R.id.scheduleDescriptionTextView);
+                TextView subEventStartTime = (TextView) v.findViewById(R.id.scheduleCardStartTimeTextView);
+                TextView subEventEndTime = (TextView) v.findViewById(R.id.scheduleCardEndTimeTextView);
+                subEventName.setText(model.getSubEventName());
+                subEventDescription.setText(model.getSubEventDescription());
+                subEventStartTime.setText(model.getSubEventStartTime() + " - " + model.getSubEventEndTime());
+                subEventEndTime.setText(model.getSubEventDate());
+            }
+        };
+
+        scheduleListView.setAdapter(firebaseListAdapter);
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {

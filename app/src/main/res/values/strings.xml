@@ -231,4 +231,6 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="add_event">Add Event</string>
     <string name="add_event_image">Add Event Image</string>
+    <string name="sub_event_name">Sub Event Name</string>
+    <string name="sub_event_description">Sub Event Description</string>
 </resources>
