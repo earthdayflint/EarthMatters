@@ -38,7 +38,7 @@
 
 
             <TextView
-                android:id="@+id/scheduleCardStartTimeTextView"
+                android:id="@+id/scheduleCardDateTextView"
                 android:textSize="14sp"
                 android:textColor="#000"
                 android:layout_width="195dp"

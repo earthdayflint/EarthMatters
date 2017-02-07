@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="048534af5d1db1b3c21674926a18f19bb11c7cf7">
+        sha1="b32cb77d1b249740048ec96209f0b75f8be60d1e">
         <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_166717c8d0201df9f83ea6582545f53cec07511e\classes.dex" />
     </item>
     <item
@@ -403,7 +403,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="96a9969e36dbc4e8de84ab626bc92dc140657cf1">
+        sha1="1ba442ddaa6dbf1fbac76e65c86f2de3603ee614">
         <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_87e01686fe10afe67bc0467cfe6f9383e88c337b\classes.dex" />
     </item>
     <item

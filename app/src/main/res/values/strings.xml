@@ -233,4 +233,17 @@
     <string name="add_event_image">Add Event Image</string>
     <string name="sub_event_name">Sub Event Name</string>
     <string name="sub_event_description">Sub Event Description</string>
+    <string name="sub_event_edit_text">Sub Event Name</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="sub_event_description_edit_text">Sub Event Description</string>
+    <string name="sub_event_name_edit_text">Sub Event Name</string>
+    <string name="_sub_event_name_edit_text">Enter Sub Event Name</string>
+    <string name="enter_sub_event_name">Enter Sub Event Name</string>
+    <string name="select_date_text_view">Select Date</string>
+    <string name="select_start_time">Select Start Time</string>
+    <string name="select_end_time">Select End Time</string>
+    <string name="enter_sub_event_description">Enter Sub Event Description</string>
+    <string name="add_sub_event">Add Sub Event</string>
+    <string name="add_sub_event_header">Add Sub Event</string>
 </resources>

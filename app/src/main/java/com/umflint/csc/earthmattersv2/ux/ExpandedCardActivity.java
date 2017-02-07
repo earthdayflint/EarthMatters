@@ -65,6 +65,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
     private ListView scheduleListView;
     private RecyclerView recyclerView;
     private FloatingActionButton fabBooth;
+    private FloatingActionButton fabSchedule;
     private boolean isAdmin;
 
     Activity activity;
@@ -111,12 +112,12 @@ public class ExpandedCardActivity extends AppCompatActivity {
             protected void populateView(View v, ScheduleModel model, int position) {
                 TextView subEventName = (TextView) v.findViewById(R.id.scheduleCardNameTextView);
                 TextView subEventDescription = (TextView) v.findViewById(R.id.scheduleDescriptionTextView);
-                TextView subEventStartTime = (TextView) v.findViewById(R.id.scheduleCardStartTimeTextView);
+                TextView subEventDate = (TextView) v.findViewById(R.id.scheduleCardDateTextView);
                 TextView subEventEndTime = (TextView) v.findViewById(R.id.scheduleCardEndTimeTextView);
                 subEventName.setText(model.getSubEventName());
                 subEventDescription.setText(model.getSubEventDescription());
-                subEventStartTime.setText(model.getSubEventStartTime() + " - " + model.getSubEventEndTime());
-                subEventEndTime.setText(model.getSubEventDate());
+                subEventDate.setText(model.getSubEventDate());
+                subEventEndTime.setText(model.getSubEventStartTime() + " - " + model.getSubEventEndTime());
             }
         };
 
@@ -172,6 +173,16 @@ public class ExpandedCardActivity extends AppCompatActivity {
             }
         });
 
+        fabSchedule = (FloatingActionButton) findViewById(R.id.fabSchedule);
+        fabSchedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddSubEventActivity.class);
+                intent.putExtra("coverName", coverName);
+                startActivity(intent);
+            }
+        });
+
         checkAuth();
         StorageReference imageRef = storageRef.child(coverName);
         imageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -193,12 +204,8 @@ public class ExpandedCardActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        int id = item.getItemId();
         if (id == R.id.action_add_calendar) {
             calendarPopulator.addToCalendar(calendarStartDate,calendarEndDate,eventName,eventDescription,location);
             return true;
