@@ -58,6 +58,7 @@
          />
 
     <Button
+        style="@style/Widget.AppCompat.Button.Colored"
         android:text="@string/add_booth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
