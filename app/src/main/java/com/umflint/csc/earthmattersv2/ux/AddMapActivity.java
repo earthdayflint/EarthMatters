@@ -19,6 +19,8 @@ import com.google.firebase.storage.StorageReference;
 import com.umflint.csc.earthmattersv2.R;
 import com.umflint.csc.earthmattersv2.utilities.Utilities;
 
+import java.util.ArrayList;
+
 /**
  * Created by Benjamin on 3/14/2017.
  */
@@ -27,15 +29,16 @@ public class AddMapActivity extends AppCompatActivity {
 
     private static final int READ_REQUEST_CODE_IMAGE = 42;
     private Uri imageUri;
-    private FirebaseDatabase database;
     private DatabaseReference myRef;
     private FirebaseStorage storage = FirebaseStorage.getInstance();
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private StorageReference storageRef;
     private Button mapSelectButton;
     private Button addMapButton;
     private String coverName;
     private ImageView mapImage;
     private String mapName;
+    private ArrayList<String> mapsArrayList;
     private Utilities utilities = new Utilities();
 
     @Override
@@ -43,12 +46,14 @@ public class AddMapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_map);
         database = FirebaseDatabase.getInstance();
+        myRef = database.getReference(getString(R.string.firebaseEvents));
         final StorageReference storageRef = storage.getReferenceFromUrl(getString(R.string.firebaseBucket));
         mapSelectButton = (Button) findViewById(R.id.mapSelectButton);
         addMapButton = (Button) findViewById(R.id.addMapButton);
         mapImage = (ImageView) findViewById(R.id.mapImage);
 
         coverName = getIntent().getExtras().getString(getString(R.string.extrasCoverName));
+        mapsArrayList = getIntent().getExtras().getStringArrayList(getString(R.string.maps_array_list));
 
         mapSelectButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,8 +71,13 @@ public class AddMapActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(imageUri != null){
                     mapName = Long.toString(System.currentTimeMillis());
-                    StorageReference imageRef = storageRef.child(mapName);
+                    StorageReference imageRef = storageRef.child(getString(R.string.string_maps)).child(coverName).child(mapName);
                     imageRef.putFile(imageUri);
+                    if(mapsArrayList.contains("placeholder")){
+                        mapsArrayList.remove(0);
+                    }
+                    mapsArrayList.add(getString(R.string.firebaseBucket) + "/Maps/" + mapName);
+                    myRef.child(coverName).child(getString(R.string.maps_array_list)).setValue(mapsArrayList);
                 }
                 finish();
             }

@@ -57,6 +57,7 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
                 intent.putExtra(activity.getString(R.string.extrasStartDate), model.getStartDate());
                 intent.putExtra(activity.getString(R.string.extrasEndDate), model.getEndDate());
                 intent.putExtra(activity.getString(R.string.extrasDescription),model.getDescription());
+                intent.putExtra(activity.getString(R.string.maps_array_list),model.getMapsArrayList());
                 activity.startActivity(intent);
             }
         });

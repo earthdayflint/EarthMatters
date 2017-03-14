@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
@@ -26,6 +27,8 @@ import com.google.firebase.storage.StorageReference;
 import com.umflint.csc.earthmattersv2.R;
 import com.umflint.csc.earthmattersv2.fragment.AddDateDialogFragment;
 import com.umflint.csc.earthmattersv2.model.EventModel;
+
+import java.util.ArrayList;
 
 public class CreateEventActivity extends AppCompatActivity {
 
@@ -82,8 +85,12 @@ public class CreateEventActivity extends AppCompatActivity {
                     StorageReference imageRef = storageRef.child(coverName);
                     imageRef.putFile(imageUri);
                 }
-                addEvent();
-                finish();
+                try{
+                    addEvent();
+                    finish();
+                }catch (Exception e){
+                    Toast.makeText(getApplicationContext(), "Please fill entire form", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -169,6 +176,9 @@ public class CreateEventActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference();
         EventModel newEvent = new EventModel(eventNameEditText.getText().toString(), eventLocation, eventDescriptionEditText.getText().toString(), startDateString, endDateString, coverName, scheduleName);
+        ArrayList<String> mapsArrayList = new ArrayList<>();
+        mapsArrayList.add("placeholder");
+        newEvent.setMapsArrayList(mapsArrayList);
         ref.child("Events").child(coverName).setValue(newEvent);
     }
 }

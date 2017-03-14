@@ -40,6 +40,8 @@ import com.umflint.csc.earthmattersv2.utilities.EventMap;
 import com.umflint.csc.earthmattersv2.R;
 import com.umflint.csc.earthmattersv2.utilities.Utilities;
 
+import java.util.ArrayList;
+
 public class ExpandedCardActivity extends AppCompatActivity {
 
     private static final int READ_REQUEST_CODE_IMAGE = 42;
@@ -69,6 +71,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
     private FloatingActionButton fabSchedule;
     private FloatingActionButton fabMaps;
     private boolean isAdmin;
+    private ArrayList<String> mapsArrayList;
 
     Activity activity;
 
@@ -152,6 +155,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
         location = getIntent().getExtras().getString(getString(R.string.extrasLocation));
         coverName = getIntent().getExtras().getString(getString(R.string.extrasCoverName));
         eventDescription = getIntent().getExtras().getString(getString(R.string.extrasDescription));
+        mapsArrayList = getIntent().getExtras().getStringArrayList(getString(R.string.maps_array_list));
         startDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
         endDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasEndDate)));
         calendarStartDate = utilities.tranformDateForCalendar(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
@@ -191,6 +195,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AddMapActivity.class);
                 intent.putExtra("coverName", coverName);
+                intent.putExtra(getString(R.string.maps_array_list),mapsArrayList);
                 startActivity(intent);
             }
         });

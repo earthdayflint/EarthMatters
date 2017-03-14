@@ -1,5 +1,7 @@
 package com.umflint.csc.earthmattersv2.model;
 
+import java.util.ArrayList;
+
 /**
  * Created by Copenblend on 10/31/2016.
  */
@@ -12,7 +14,15 @@ public class EventModel {
     private String endDate;
     private String coverName;
     private String scheduleName;
+    private ArrayList<String> mapsArrayList;
 
+    public ArrayList<String> getMapsArrayList() {
+        return mapsArrayList;
+    }
+
+    public void setMapsArrayList(ArrayList<String> mapsArrayList) {
+        this.mapsArrayList = mapsArrayList;
+    }
 
     public String getScheduleName() {
         return scheduleName;
