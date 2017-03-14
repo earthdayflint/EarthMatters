@@ -176,9 +176,6 @@ public class CreateEventActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference();
         EventModel newEvent = new EventModel(eventNameEditText.getText().toString(), eventLocation, eventDescriptionEditText.getText().toString(), startDateString, endDateString, coverName, scheduleName);
-        ArrayList<String> mapsArrayList = new ArrayList<>();
-        mapsArrayList.add("placeholder");
-        newEvent.setMapsArrayList(mapsArrayList);
         ref.child("Events").child(coverName).setValue(newEvent);
     }
 }

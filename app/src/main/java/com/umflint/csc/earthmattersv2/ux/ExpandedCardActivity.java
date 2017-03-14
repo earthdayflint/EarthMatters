@@ -12,12 +12,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
@@ -33,7 +35,11 @@ import com.roughike.bottombar.OnTabSelectListener;
 import com.squareup.picasso.Picasso;
 import com.umflint.csc.earthmattersv2.adaptor.BoothCardContentAdapter;
 import com.umflint.csc.earthmattersv2.adaptor.BoothCardViewHolder;
+import com.umflint.csc.earthmattersv2.adaptor.MapCardContentAdapter;
+import com.umflint.csc.earthmattersv2.adaptor.MapCardViewHolder;
 import com.umflint.csc.earthmattersv2.model.BoothModel;
+import com.umflint.csc.earthmattersv2.model.EventModel;
+import com.umflint.csc.earthmattersv2.model.MapModel;
 import com.umflint.csc.earthmattersv2.model.ScheduleModel;
 import com.umflint.csc.earthmattersv2.utilities.CalendarPopulator;
 import com.umflint.csc.earthmattersv2.utilities.EventMap;
@@ -47,6 +53,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
     private static final int READ_REQUEST_CODE_IMAGE = 42;
     private ImageView expandedcardImageView;
     private ImageView expandedCardCalendarImageView;
+    private ImageView mapsImageView; 
     private String eventName;
     private String location;
     private String coverName;
@@ -62,16 +69,19 @@ public class ExpandedCardActivity extends AppCompatActivity {
     private CalendarPopulator calendarPopulator;
     private EventMap eventMap;
     private StorageReference storageRef;
+    private StorageReference mapImageRef; 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference boothReference;
     private DatabaseReference scheduleReference;
+    private DatabaseReference mapsReference;
     private ListView scheduleListView;
-    private RecyclerView recyclerView;
+    private RecyclerView boothRecyclerView;
+    private RecyclerView mapsRecyclerView;
     private FloatingActionButton fabBooth;
     private FloatingActionButton fabSchedule;
     private FloatingActionButton fabMaps;
     private boolean isAdmin;
-    private ArrayList<String> mapsArrayList;
+    private LinearLayout imageLayout;
 
     Activity activity;
 
@@ -92,14 +102,21 @@ public class ExpandedCardActivity extends AppCompatActivity {
         eventMap = new EventMap(this);
         activity = this;
         scheduleListView = (ListView) findViewById(R.id.scheduleListView);
-        recyclerView = (RecyclerView) findViewById(R.id.boothRecyclerView);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        boothRecyclerView = (RecyclerView) findViewById(R.id.boothRecyclerView);
+        boothRecyclerView.setHasFixedSize(true);
+        boothRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        mapsRecyclerView = (RecyclerView) findViewById(R.id.mapsRecyclerView);
+        mapsRecyclerView.setHasFixedSize(true);
+        mapsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         final ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
         boothReference = database.getReference("Events").
                 child(getIntent().getExtras().getString(getString(R.string.extrasCoverName))).child("Booths");
         scheduleReference = database.getReference("Events").
                 child(getIntent().getExtras().getString(getString(R.string.extrasCoverName))).child("SubEvents");
+        mapsReference = database.getReference("Events").
+                child(getIntent().getExtras().getString(getString(R.string.extrasCoverName))).child("Maps");
 
         BoothCardContentAdapter boothCardContentAdapter = new BoothCardContentAdapter(
                 BoothModel.class,
@@ -108,8 +125,18 @@ public class ExpandedCardActivity extends AppCompatActivity {
                 boothReference,
                 this,
                 this);
+        boothRecyclerView.setAdapter(boothCardContentAdapter);
 
-        recyclerView.setAdapter(boothCardContentAdapter);
+        MapCardContentAdapter mapCardContentAdapter = new MapCardContentAdapter(
+                MapModel.class,
+                R.layout.fragment_map_card,
+                MapCardViewHolder.class,
+                mapsReference,
+                this,
+                this,
+                getIntent().getExtras().getString(getString(R.string.firebaseCoverName))
+        );
+        mapsRecyclerView.setAdapter(mapCardContentAdapter);
 
         FirebaseListAdapter<ScheduleModel> firebaseListAdapter = new FirebaseListAdapter<ScheduleModel>(this, ScheduleModel.class,
                 R.layout.fragment_schedule_card, scheduleReference ) {
@@ -155,7 +182,6 @@ public class ExpandedCardActivity extends AppCompatActivity {
         location = getIntent().getExtras().getString(getString(R.string.extrasLocation));
         coverName = getIntent().getExtras().getString(getString(R.string.extrasCoverName));
         eventDescription = getIntent().getExtras().getString(getString(R.string.extrasDescription));
-        mapsArrayList = getIntent().getExtras().getStringArrayList(getString(R.string.maps_array_list));
         startDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
         endDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasEndDate)));
         calendarStartDate = utilities.tranformDateForCalendar(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
@@ -195,7 +221,6 @@ public class ExpandedCardActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AddMapActivity.class);
                 intent.putExtra("coverName", coverName);
-                intent.putExtra(getString(R.string.maps_array_list),mapsArrayList);
                 startActivity(intent);
             }
         });

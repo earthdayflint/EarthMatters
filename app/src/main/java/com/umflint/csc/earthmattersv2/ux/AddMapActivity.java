@@ -17,6 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.umflint.csc.earthmattersv2.R;
+import com.umflint.csc.earthmattersv2.model.MapModel;
 import com.umflint.csc.earthmattersv2.utilities.Utilities;
 
 import java.util.ArrayList;
@@ -38,7 +39,6 @@ public class AddMapActivity extends AppCompatActivity {
     private String coverName;
     private ImageView mapImage;
     private String mapName;
-    private ArrayList<String> mapsArrayList;
     private Utilities utilities = new Utilities();
 
     @Override
@@ -53,7 +53,6 @@ public class AddMapActivity extends AppCompatActivity {
         mapImage = (ImageView) findViewById(R.id.mapImage);
 
         coverName = getIntent().getExtras().getString(getString(R.string.extrasCoverName));
-        mapsArrayList = getIntent().getExtras().getStringArrayList(getString(R.string.maps_array_list));
 
         mapSelectButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,11 +72,8 @@ public class AddMapActivity extends AppCompatActivity {
                     mapName = Long.toString(System.currentTimeMillis());
                     StorageReference imageRef = storageRef.child(getString(R.string.string_maps)).child(coverName).child(mapName);
                     imageRef.putFile(imageUri);
-                    if(mapsArrayList.contains("placeholder")){
-                        mapsArrayList.remove(0);
-                    }
-                    mapsArrayList.add(getString(R.string.firebaseBucket) + "/Maps/" + mapName);
-                    myRef.child(coverName).child(getString(R.string.maps_array_list)).setValue(mapsArrayList);
+                    MapModel mapModel = new MapModel(getString(R.string.firebaseBucket) + "/Maps/" + coverName + "/" + mapName);
+                    myRef.child(coverName).child("Maps").child(getString(R.string.maps_array_list)).setValue(mapModel);
                 }
                 finish();
             }

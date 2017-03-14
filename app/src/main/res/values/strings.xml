@@ -250,4 +250,5 @@
     <string name="select_map">Select Map</string>
     <string name="string_maps">Maps</string>
     <string name="maps_array_list">mapsArrayList</string>
+    <string name="maps_array_list_string">mapsArrayList</string>
 </resources>
