@@ -246,4 +246,6 @@
     <string name="enter_sub_event_description">Enter Sub Event Description</string>
     <string name="add_sub_event">Add Sub Event</string>
     <string name="add_sub_event_header">Add Sub Event</string>
+    <string name="add_map">Add Map</string>
+    <string name="select_map">Select Map</string>
 </resources>

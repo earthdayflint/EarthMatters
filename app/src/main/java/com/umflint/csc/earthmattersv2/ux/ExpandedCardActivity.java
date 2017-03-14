@@ -42,6 +42,7 @@ import com.umflint.csc.earthmattersv2.utilities.Utilities;
 
 public class ExpandedCardActivity extends AppCompatActivity {
 
+    private static final int READ_REQUEST_CODE_IMAGE = 42;
     private ImageView expandedcardImageView;
     private ImageView expandedCardCalendarImageView;
     private String eventName;
@@ -66,6 +67,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private FloatingActionButton fabBooth;
     private FloatingActionButton fabSchedule;
+    private FloatingActionButton fabMaps;
     private boolean isAdmin;
 
     Activity activity;
@@ -183,6 +185,18 @@ public class ExpandedCardActivity extends AppCompatActivity {
             }
         });
 
+        fabMaps = (FloatingActionButton) findViewById(R.id.fabMap);
+        fabMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddMapActivity.class);
+                intent.putExtra("coverName", coverName);
+                startActivity(intent);
+            }
+        });
+
+
+
         checkAuth();
         StorageReference imageRef = storageRef.child(coverName);
         imageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -218,9 +232,13 @@ public class ExpandedCardActivity extends AppCompatActivity {
         if(utilities.checkAuth()){
             isAdmin = true;
             fabBooth.show();
+            fabSchedule.show();
+            fabMaps.show();
         }else{
             isAdmin = false;
             fabBooth.hide();
+            fabMaps.hide();
+            fabSchedule.hide();
         }
     }
 }

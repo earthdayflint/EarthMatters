@@ -46,6 +46,7 @@
         <activity android:name=".ux.CreateEventActivity" />
         <activity android:name=".ux.AddBoothActivity" />
         <activity android:name=".ux.AddSubEventActivity" />
+        <activity android:name=".ux.AddMapActivity"/>
         <activity android:name=".ux.PreferencesActivity">
 
             <meta-data

@@ -3,12 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\0991967369d46e74229e6af860085cf6a0b9e9f3\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.8.0_14a8815c130da7bb4d73a69f21cbd64c3a595683\classes.dex" />
+        sha1="32534a05122d0c535cc8b885e45b1e7ce3b0f03e">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ccf8147f48de11b88803f9e6524a062fb918530a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\ba456491a9a13f180908c6360bf82a077cd8100f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15e59454416c6341bd3ed2533b585cd340682dd1">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6cf13ce851e953dcba57a87ddc0f44dc43f97e64\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,57 +30,156 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.2.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\5a40c3e702c4eaf0ca025fd0b6ceeec2c1aab1c0\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d4ce6303165f20650850673bd5891fbcca80caae">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.journeyapps-zxing-android-embedded-3.2.0_cd3701b931c07565178453d1e19ed43f37f00513\classes.dex" />
+        sha1="ec9104b53aee77dfcfd2fe1c4add23ff7c4df55f">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_89dc98d69da128d440885f1dda9d93fcd791de09\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\bd51a4e588ddc222c54b702ad455b43d2f3729d5\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.8.0_1a189f5b987eba9c3e097e8a9eedfd56416d52af\classes.dex" />
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fd51f5d649510bd1c637d20469ae17caaccc4fa9\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\a473f1a75b65c4e95098f38ba0e865386e754a6a\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.8.0_0578616d71c93564744b499d867eb9dd980e7e05\classes.dex" />
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6abb580e6ea17f1b6095b2ea4a814df6bdb17c10\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\ad8ea5aed3bee4df043783ae62c1e400fb46cc4c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f5eeb4583102dd6771ab71bc8f0c6965548dd3e0">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fff44a9964854c4854ea8b8ffede3799f12613c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\c8dbc486bd03d35c66bf51f5012d88706e4ebe35\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_70f56848833b6e810f5e5fc9630ce56f58a287f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\55f16fa5cb47e1ef2dd61a6076c2b7e97f64c7c3\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.8.0_c337b27a5c4088703af4791c389355f83e7c9be6\classes.dex" />
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8f85fb5140321210939023c42042ea626bfeeebb\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\4f469f18ea85e442bb66a8f6236f10ca8886f17d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_c0688a4d12e137189b9f6c47e0797196c7c2fd34\classes.dex" />
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d4e6c5c4f36430d8b6870968b8d09eef097b8906\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\9df9ff73f642a0e828921971755a6df3d0b5df93\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_c9466bb68a565e463c307fcabda2567e69e22d4d\classes.dex" />
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf6f6c369c4f9b697c166401847d394781c4d8ae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\ea0616289e753aa76995242a3b5dd586b44674cb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f1965c761d345142bb39409b2cb3907fea7ad55d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\090bd04c1a711f09e86749ce4405c02379b8b095\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a1f6b554c23bc7b92b036b19096f1c81a5544f1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\318a0b626668ee44bb98a634e49ebdb1292abb24\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="672cceae26e9a8fcbd8e0eefe5fc351c50d2488a">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1306d9b02fb0844e27fd36787059e8c1de7886e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\c3064a37fe3ed4d26ad404c36ea1ccd81ab20404\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_49c8513c6b3a6299e70fe2117c2869654460f24a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\f8255591c627778b946dbfbc6270209eb79bd3d8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="679251204de40ace98776a6f4e3a649c27e3d89f">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_67dee8854a018b0b1f28a251f3d57c6b3339bce6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\da8487a96130d263773dc5a242deaa452d363b25\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_51e93a189370c6c50cf87bfc3c87cd60231c68f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\593bd33e4c77899620831ef8faaf31d86b986f27\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7fd91ec2730fdaa82906aad32a3f3d3e574bae56">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_22e670f6d73fdd517dbfdbd6d1148c63bd78d7cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\124f6b568921e3115fc09954d70ba5c987ea5816\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_646596f91263741d1994ae7640da6ab14dd75992\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\c48ee8c406c459f2f66d84e0a2aa5243e0058450\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_adc86b05353db4c47b2404a95197b185627eb036\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -79,224 +187,71 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="484fdb134653f85232628e71637a759365c9697f">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_166717c8d0201df9f83ea6582545f53cec07511e\classes.dex" />
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_166717c8d0201df9f83ea6582545f53cec07511e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\691f1b25c8f7f08ae75a4a1df56cc8ea663e5307\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-23.4.0_5a21b533caad5e9966541040eaefe2e196805373\classes.dex" />
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e89945ca6f6f195769b21238be26ceabe5f1d5b2\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\0.6.2\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\54d5783015564b6c77be3971241e3e6bf49b0085\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7058bce7e91ddb18e2e07b0b699019039b87e47b">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-database-0.6.2_193a396d0ee1effa4da756b053f81456db2633de\classes.dex" />
+        sha1="3c433e48557e476290f45fb6cb568d1a103c9978">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_44e2c5727b76938f3c88f443b650126d0c72837b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_0ba1f49668adcce5e56b6bb83e4b301735a3d2d9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.8.0_64ac849915091b2609d4e4ad45de42a956f6fcef\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-auth\0.6.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="38c0f2d5be3c27ed0adf9aebe7b8e3aa0d78b9fb">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-auth-0.6.2_74b1a001ed6696d6d4dca12b3e6fff470ffb8ed3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_d8e5aff41cf3538135d903999a1aaeaac5f14a60\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_8c060a34701e7b70a653d06449ebbc06d46c2808\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\c1621789b84407477d0545a12c20d932e331d917\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_46ae27daacf6ee8f1689e525fdc3914636020d3a\classes.dex" />
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6421e1a2c93f0f2bc719d067a3f4e5d6f6e92495\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.bignerdranch.android\expandablerecyclerview\1.0.3\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\df0549ec295b0155a84104ab06e4ccb1faefc02f\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f5eeb4583102dd6771ab71bc8f0c6965548dd3e0">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.bignerdranch.android-expandablerecyclerview-1.0.3_c76dd490242d12a52849afe4057daee66847e3d4\classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1cc58ce57a58c5b5056963150a8b56c5d6f04f1e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\de61fc0d0088d3c18c5e9f2e77d55a3a76c8a929\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_2064cdaa365b020b10f8435db7b4525e881f1548\classes.dex" />
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e290a38028411a4ad5ac48300b819dd1b602c2c3\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\73b9eff969deb4a127539260b62520cfcabef3d7\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_d38d388c8444e79d899b1d014a02dc07abf72f47\classes.dex" />
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b5d994a9013888d1c5f5b118d95f62d88a1e2ab0\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.8.0_1e4897c273448b99f39572b6804b72b75ae5f873\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_a59d1320b22915686012d0942590a8f0992f3cad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_4bbd9b5916b97e5a95fabf6831f33a40e2ca082a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ec9104b53aee77dfcfd2fe1c4add23ff7c4df55f">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.8.0_ca86b2b295a8524777f56d1591520957aa6c0067\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.8.0_7d535784ed89e92c45312a36d7985fe845e60d10\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.8.0_82ecc8edd620654c99861be0ca8b5cccef6fd621\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.8.0_643a16c3be66bf692e910a906d2c86a6e345c8d2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui\0.6.2\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\9f8639080eaa5c3fed5071ade46283d18542d6bb\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="16226703bab55ec42457666213cd3503799d36a8">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-0.6.2_5239c9a72a720a13ae2dfa1440791ea358d5fc7b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.roughike\bottom-bar\2.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="32534a05122d0c535cc8b885e45b1e7ce3b0f03e">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.roughike-bottom-bar-2.0.2_76dd1b29473539af3b296aafb34d6e5af0a12c42\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.8.0_05cd9a2a34842125248c80b292e121671ff6bc63\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.14.1_f9e5a7b6e2ff278bb93fb6a117da341a2d294572\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_c665ea4e848b8e478afb395227d4041df01be892\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="15e59454416c6341bd3ed2533b585cd340682dd1">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.8.0_f9d1a0ceae60d48e71a42adec5f4acf3dd2c7000\classes.dex" />
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c3a3466b3d65850b55930cb828325a1d4546517f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -309,30 +264,48 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\54f5567b9085eaf7eaf5e0886d9eade1f179a7d8\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.8.0_37dd2cd20998c846371906bf4143b79e3016a200\classes.dex" />
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b034f3ceb0baeb2e45c86228b372a05ab73099ce\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\08a0b7a3d468797f8e2435d0bfe247d113d762dc\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="679251204de40ace98776a6f4e3a649c27e3d89f">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-9.8.0_9afe4252feec4956281e6ad140e69549dd9896f0\classes.dex" />
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ae08f6750ce2f30ea40bf708b779b52a1775945d\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\palette-v7\25.0.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\576e00c39303694464e2fd7d6e8ba2e13c680c9f\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="672cceae26e9a8fcbd8e0eefe5fc351c50d2488a">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-25.0.0_d4f96a887597f0f2c6048b3f84a8fb8cc263beb1\classes.dex" />
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_feedd2c694358c62d514f9db853a275256b2aaf2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\1aabd3229d1a893fb471ec59a4ac9f5143e62f3c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bae7a34fde6d100d823a9a60c03c9c41b0af97e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\8ecd5d04eb2329082ac768c09acf437286dc8f02\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="38c0f2d5be3c27ed0adf9aebe7b8e3aa0d78b9fb">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8aa587ff8ea151ecd5ed2edb4471b4d8dbf792d0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -354,30 +327,48 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-storage\0.6.2\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\8887b74d66c9494770a5241bab560916e415ca2b\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3c433e48557e476290f45fb6cb568d1a103c9978">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-storage-0.6.2_b850242e81c208ae60102f644ad051e77ee489d3\classes.dex" />
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d8e0ebb52269bd597b7c2f3c2d79c651ceb9ed12\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\5f54159be0e1bc67614281b3b88fd508553b5949\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.8.0_29eb84fb3aac14be0d2d9c26c1a4e588fcb8bcbb\classes.dex" />
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_315a5680a8fe7a0905b21d682fdd94f69bd97b43\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_815e7681618b57b0fd363064a23cd1eff8ae35fd\classes.dex" />
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_2064cdaa365b020b10f8435db7b4525e881f1548\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\da85fded5acde5bab9742ab90dd5320da854ccf7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7058bce7e91ddb18e2e07b0b699019039b87e47b">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_660bda8d4f7cb7231d426a474d40064390dfe325\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\91005cd57d7fc3723ebbdf558b56bd1aa41fcea7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_703058f80e92c90b66eb82c13f0fabe484b6e454\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -390,75 +381,84 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_b9eb71238e638908d6fb53dc45dde4540baca702\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="bd19a8df8fa7746a7853570814a5c94e6428e9b3">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_87e01686fe10afe67bc0467cfe6f9383e88c337b\classes.dex" />
+        sha1="def5abf736b4fb8d41a2023cbaf709c22eaba5db">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_87e01686fe10afe67bc0467cfe6f9383e88c337b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\ed725a2302de5fe5f4f462a8de4d21825de5aafa\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9ff04cc3470178a44512624036751a803418c2ca">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.8.0_8d122e9effd6bece695844857914080570908883\classes.dex" />
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d48856a761eeaebff686d910dbc926b0a282f660\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\6bee0945363bfe61b04ff055a3ea5305042e3ffc\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.8.0_bc21d032869740f0c3b828c07b20944d7cca31dc\classes.dex" />
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_12aa33284d730b28af9e9333c134668db1e60d7e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\5425fc062e451c179334a3a2a925a915f109845c\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7fd91ec2730fdaa82906aad32a3f3d3e574bae56">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.8.0_156da90368d72b9ee0011fe6cf6a91e780b1cd6f\classes.dex" />
+        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_963a2c4d1c0f6bfbd7596fe013c831ecd5d3f0f1\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\0fee51a3cf48c3d838704f5e182deda47ff0b514\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_13231dd9bca943c61c809bc1eded37e1acc4535d\classes.dex" />
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_612d42e12fd6a800cf0543490fdc3af544733dd3\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\6a7f50c7c231826d73ee7fe420052ce630d41f02\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.8.0_b181df9be3033dca6fbb2182fac6b9609f6491b4\classes.dex" />
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_27fd567ace75337d84c38c479e1d26e6841bbc91\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\jars\classes.jar"
+        jar="C:\Users\Benjamin\.android\build-cache\ef74fc3075e38df9497e5ea726a206c367120c6f\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="190a642ba16d1421296a4d794606279b80039c59">
-        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.8.0_73fa98bc838e4e6770281e461e337d87e295f7c7\classes.dex" />
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_18f91b6c31167661614d0dcf9068badf09be5ce2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\f09a1b62437a72b63beaa19350ed224a01df5470\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b7ee8973e8b6b91a1ae96b1121304b0bf3e49bdb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Benjamin\.android\build-cache\3896207fce7d3f03b7f3541ee8107097cf4577bb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4ce6303165f20650850673bd5891fbcca80caae">
+        <dex dex="C:\Users\Benjamin\Documents\ASProj\EarthMattersv2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ff0e1fd26a23e6835ed51d51b2993fa8bc3261c8\classes.dex" />
     </item>
 
 </items>

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="expandablerecyclerview-1.0.3">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.bignerdranch.android/expandablerecyclerview/1.0.3/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.bignerdranch.android/expandablerecyclerview/1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ad8ea5aed3bee4df043783ae62c1e400fb46cc4c/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ad8ea5aed3bee4df043783ae62c1e400fb46cc4c/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
