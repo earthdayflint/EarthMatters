@@ -9,15 +9,25 @@ public class BoothModel {
     private long boothNumber;
     private String boothDescription;
     private String boothWebsite;
+    private String boothId;
 
     public BoothModel() {
     }
 
-    public BoothModel(String boothName, long boothNumber, String boothDescription, String boothWebsite) {
+    public BoothModel(String boothName, long boothNumber, String boothDescription, String boothWebsite, String boothId) {
         this.boothName = boothName;
         this.boothNumber = boothNumber;
         this.boothDescription = boothDescription;
         this.boothWebsite = boothWebsite;
+        this.boothId = boothId;
+    }
+
+    public String getBoothId() {
+        return boothId;
+    }
+
+    public void setBoothId(String boothId) {
+        this.boothId = boothId;
     }
 
     public String getBoothWebsite() {

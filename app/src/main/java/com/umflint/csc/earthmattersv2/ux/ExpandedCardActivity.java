@@ -110,6 +110,16 @@ public class ExpandedCardActivity extends AppCompatActivity {
         mapsRecyclerView.setHasFixedSize(true);
         mapsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        storageRef = storage.getReferenceFromUrl(getString(R.string.firebaseBucket));
+        eventName = getIntent().getExtras().getString(getString(R.string.extrasEventName));
+        location = getIntent().getExtras().getString(getString(R.string.extrasLocation));
+        coverName = getIntent().getExtras().getString(getString(R.string.extrasCoverName));
+        eventDescription = getIntent().getExtras().getString(getString(R.string.extrasDescription));
+        startDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
+        endDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasEndDate)));
+        calendarStartDate = utilities.tranformDateForCalendar(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
+        calendarEndDate = utilities.tranformDateForCalendar(getIntent().getExtras().getString(getString(R.string.extrasEndDate)));
+
         final ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
         boothReference = database.getReference("Events").
                 child(getIntent().getExtras().getString(getString(R.string.extrasCoverName))).child("Booths");
@@ -124,7 +134,8 @@ public class ExpandedCardActivity extends AppCompatActivity {
                 BoothCardViewHolder.class,
                 boothReference,
                 this,
-                this);
+                this,
+                coverName);
         boothRecyclerView.setAdapter(boothCardContentAdapter);
 
         MapCardContentAdapter mapCardContentAdapter = new MapCardContentAdapter(
@@ -177,15 +188,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
         eventDescriptionTextView = (TextView) findViewById(R.id.expandedCardDescriptionTextView);
         //expandedCardDateTextView = (TextView) findViewById(R.id.expandedCardDateTextView);
 
-        storageRef = storage.getReferenceFromUrl(getString(R.string.firebaseBucket));
-        eventName = getIntent().getExtras().getString(getString(R.string.extrasEventName));
-        location = getIntent().getExtras().getString(getString(R.string.extrasLocation));
-        coverName = getIntent().getExtras().getString(getString(R.string.extrasCoverName));
-        eventDescription = getIntent().getExtras().getString(getString(R.string.extrasDescription));
-        startDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
-        endDate = utilities.transFormDateForUser(getIntent().getExtras().getString(getString(R.string.extrasEndDate)));
-        calendarStartDate = utilities.tranformDateForCalendar(getIntent().getExtras().getString(getString(R.string.extrasStartDate)));
-        calendarEndDate = utilities.tranformDateForCalendar(getIntent().getExtras().getString(getString(R.string.extrasEndDate)));
+
 
         FloatingActionButton fabDirections = (FloatingActionButton) findViewById(R.id.fabDirections);
         fabDirections.setOnClickListener(new View.OnClickListener() {

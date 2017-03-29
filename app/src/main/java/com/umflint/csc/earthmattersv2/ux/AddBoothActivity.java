@@ -27,6 +27,7 @@ public class AddBoothActivity extends AppCompatActivity {
     private EditText boothNameEditText;
     private EditText boothDescriptionEditText;
     private EditText boothWebsiteEditText;
+    private String boothId;
     private Button addEventButton;
     private String coverName;
     private Utilities utilities = new Utilities();
@@ -40,10 +41,11 @@ public class AddBoothActivity extends AppCompatActivity {
         boothNameEditText = (EditText) findViewById(R.id.boothNameEditText);
         boothNumberEditText = (EditText) findViewById(R.id.boothNumberEditText);
         boothWebsiteEditText = (EditText) findViewById(R.id.boothWebsiteEditText);
+        boothId = Long.toString(System.currentTimeMillis());
         addEventButton = (Button) findViewById(R.id.add_booth_button);
         coverName = getIntent().getExtras().getString(getString(R.string.extrasCoverName));
         myRef = database.getReference("Events").
-                child(coverName).child("Booths").child(Long.toString(System.currentTimeMillis()));
+                child(coverName).child("Booths").child(boothId);
 
         addEventButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +60,8 @@ public class AddBoothActivity extends AppCompatActivity {
     public void addEvent(){
         BoothModel newBooth = new BoothModel(boothNameEditText.getText().toString(),
                 Integer.parseInt(boothNumberEditText.getText().toString()),
-                boothDescriptionEditText.getText().toString(), utilities.formatURL(boothWebsiteEditText.getText().toString()));
+                boothDescriptionEditText.getText().toString(),
+                utilities.formatURL(boothWebsiteEditText.getText().toString()), boothId);
         myRef.setValue(newBooth);
 
     }

@@ -9,9 +9,19 @@ import java.util.ArrayList;
 public class MapModel {
 
     private String mapOne;
+    private String mapId;
 
-    public MapModel(String mapOne) {
+    public MapModel(String mapOne, String mapId) {
         this.mapOne = mapOne;
+        this.mapId = mapId;
+    }
+
+    public String getMapId() {
+        return mapId;
+    }
+
+    public void setMapId(String mapId) {
+        this.mapId = mapId;
     }
 
     public String getMapOne() {

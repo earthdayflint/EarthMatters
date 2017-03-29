@@ -72,7 +72,7 @@ public class AddMapActivity extends AppCompatActivity {
                     mapName = Long.toString(System.currentTimeMillis());
                     StorageReference imageRef = storageRef.child(getString(R.string.string_maps)).child(coverName).child(mapName);
                     imageRef.putFile(imageUri);
-                    MapModel mapModel = new MapModel(getString(R.string.firebaseBucket) + "/Maps/" + coverName + "/" + mapName);
+                    MapModel mapModel = new MapModel(getString(R.string.firebaseBucket) + "/Maps/" + coverName + "/" + mapName, mapName);
                     myRef.child(coverName).child("Maps").child(mapName).setValue(mapModel);
                 }
                 finish();
