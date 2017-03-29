@@ -11,16 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08a75f09-7108-41c7-9456-0eb88c673588" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/model/CardModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/card_edge.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tip.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/model/ScheduleModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/model/ScheduleModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/xml/bottombar_tabs.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/bottombar_tabs.xml" />
     </list>
     <ignored path="EarthMattersv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,13 +110,13 @@
       </file>
       <file leaf-file-name="content_main.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-88">
               <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
@@ -3097,7 +3089,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490790370539</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added Tip To MainActivity">
+      <created>1490795096744</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1490795096744</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3165,7 +3164,8 @@
     <MESSAGE value="Added Class for adding Maps. Maps display not implemented yet" />
     <MESSAGE value="More Map additions. Taking alot more work than I thought but should be working shortly. Need a few content adaptor classes and testing. @JohnCollins I am running into memory issues, they are fixed-ish - aka it works, im not sure how ios handles it. It seems to only be an issue when i try an use the file explorer in the maps." />
     <MESSAGE value="Added Delete Functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Delete Functionality" />
+    <MESSAGE value="Added Tip To MainActivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tip To MainActivity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3642,13 +3642,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-88">
           <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
