@@ -15,9 +15,9 @@
         icon="@drawable/map"
         title="Maps" />
 
-    <tab
+    <!--<tab
         id="@+id/tab_schedule"
         barColorWhenSelected="#00274c"
         icon="@drawable/clock"
-        title="Schedule" />
+        title="Schedule" />-->  <!--todo implementation-->
 </tabs>

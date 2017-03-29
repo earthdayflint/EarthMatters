@@ -41,7 +41,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-location:9.8.0'
     compile 'com.google.android.gms:play-services-places:9.8.0'
     compile 'com.roughike:bottom-bar:2.0.2'
-    testCompile 'junit:junit:4.12'
     compile 'com.bignerdranch.android:expandablerecyclerview:1.0.3'
+    testCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'

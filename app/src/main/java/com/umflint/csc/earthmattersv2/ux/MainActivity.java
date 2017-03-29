@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -26,8 +27,11 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.umflint.csc.earthmattersv2.adaptor.CardViewHolder;
@@ -40,14 +44,18 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Activity activity = this;
+    private TextView tipCardTextView;
     private DatabaseReference myref;
+    private DatabaseReference tipReference;
     private RecyclerView recyclerView;
     private boolean isAdmin;
+    private CardView cardView;
     private FloatingActionButton fab;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private Utilities utilities;
     private NavigationView navigationView;
     private Menu nav_Menu;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,8 +68,24 @@ public class MainActivity extends AppCompatActivity
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         myref = database.getReference(getString(R.string.firebaseEvents));
+        tipReference = database.getReference("TipText");
         fab = (FloatingActionButton) findViewById(R.id.fab);
         utilities = new Utilities();
+        cardView = (CardView) findViewById(R.id.tipCardViewClick);
+        tipCardTextView = (TextView) findViewById(R.id.tipCardTextView);
+
+
+        tipReference.child("text").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                tipCardTextView.setText(dataSnapshot.getValue().toString());
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         ContentAdapter contentAdapter = new ContentAdapter(
                 EventModel.class,

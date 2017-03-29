@@ -10,17 +10,27 @@ public class ScheduleModel {
     private String subEventName;
     private String subEventDescription;
     private String subEventDate;
+    private String subEventId;
 
     public ScheduleModel() {
     }
 
     public ScheduleModel(String subEventStartTime, String subEventEndTime, String subEventName, String subEventDescription,
-                         String subEventDate) {
+                         String subEventDate, String subEventId) {
         this.subEventStartTime = subEventStartTime;
         this.subEventEndTime = subEventEndTime;
         this.subEventName = subEventName;
         this.subEventDescription = subEventDescription;
         this.subEventDate = subEventDate;
+        this.subEventId = subEventId;
+    }
+
+    public String getSubEventId() {
+        return subEventId;
+    }
+
+    public void setSubEventId(String subEventId) {
+        this.subEventId = subEventId;
     }
 
     public String getSubEventDate() {

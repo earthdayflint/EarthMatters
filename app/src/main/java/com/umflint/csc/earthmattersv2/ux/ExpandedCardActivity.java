@@ -1,6 +1,7 @@
 package com.umflint.csc.earthmattersv2.ux;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.net.Uri;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -166,6 +168,31 @@ public class ExpandedCardActivity extends AppCompatActivity {
 
         scheduleListView.setAdapter(firebaseListAdapter);
 
+        scheduleListView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(isAdmin){
+                    new AlertDialog.Builder(view.getContext())
+                            .setTitle("Delete entry")
+                            .setMessage("Are you sure you want to delete this event?")
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    database.getReference().child("Events").child(coverName)
+                                            .child("SubEvents").removeValue();
+                                }
+                            })
+                            .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // do nothing
+                                }
+                            })
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .show();
+                }
+                return false;
+            }
+        });
+
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
@@ -176,9 +203,9 @@ public class ExpandedCardActivity extends AppCompatActivity {
                     vf.setDisplayedChild(1);
                 }else if (tabId == R.id.tab_maps){
                     vf.setDisplayedChild(2);
-                }else if (tabId == R.id.tab_schedule) {
+                }/*else if (tabId == R.id.tab_schedule) {
                     vf.setDisplayedChild(3);
-                }
+                }*///todo implement schedule
             }
         });
 
