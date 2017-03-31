@@ -7,8 +7,6 @@
     <string name="facebookID">275551752489042</string>
     <string name="websiteURL">http://www.mcc.edu/earthday/index.php</string>
     <string name="newsURL">https://news.umflint.edu/</string>
-    <string name="scanCancel">The Scan has been cancelled</string>
-    <string name="scanSuccess">Successful Scan!</string>
     <string name="extrasEventName">eventName</string>
     <string name="extrasDescription">description</string>
     <string name="extrasLocation">location</string>
@@ -17,25 +15,14 @@
     <string name="extrasCoverName">coverName</string>
     <string name="firebaseBucket">gs://earth-matters.appspot.com</string>
     <string name="firebaseEvents">Events</string>
-    <string name="firebaseEventName">eventName</string>
     <string name="firebaseCoverName">coverName</string>
-    <string name="firebaseLocationName">location</string>
-    <string name="firebaseEndDate">endDate</string>
-    <string name="firebaseStartDate">startDate</string>
-    <string name="firebaseEventDescription">description</string>
     <string name="scanPrompt">Scan QR Code</string>
     <string name="mapPackage">com.google.android.apps.maps</string>
-    <string name="currentEvents">Current Events</string>
     <string name="addNewEvent">Add New Event</string>
-    <string name="featuredEvents">Featured</string>
     <string name="contactUsEmail">earthdayflint@gmail.com</string>
-    <string name="getDirections">Get Directions</string>
-    <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_expanded_card">ExpandedCard</string>
-    <string name="section_format">Hello World from section: %1$d</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -125,120 +112,35 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
     <string name="signInSuccess">Sign in Successful</string>
     <string name="signInFail">Sign in Failed</string>
-    <string name="logout">Logout</string>
     <string name="add_to_calendar">Add to Calendar</string>
     <string name="event_name">Event Name</string>
     <string name="end_date">End Date</string>
     <string name="start_date">Start Date</string>
     <string name="add_event_description">Add Event Description</string>
-    <string name="featured">Featured</string>
     <string name="booth_name">Booth Name</string>
     <string name="booth_number">Booth Number</string>
     <string name="booth_description">Booth Description</string>
     <string name="enter_booth_information">Enter Booth Information</string>
     <string name="event_image">Event Image</string>
     <string name="add_booth">Add Booth</string>
-    <string name="enter_booth_website">Enter Booth Website</string>
     <string name="booth_website">Booth Website</string>
-    <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->
-    <string name="pref_header_general">General</string>
-
-    <string name="pref_title_social_recommendations">Enable social recommendations</string>
-    <string name="pref_description_social_recommendations">Recommendations for people to contact
-        based on your message history
-    </string>
-
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
-
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
-    <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
 
     <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
-
-    <string name="pref_title_sync_frequency">Sync frequency</string>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
-    </string-array>
-
-    <string-array name="list_preference_entries">
-        <item>Entry 1</item>
-        <item>Entry 2</item>
-        <item>Entry 3</item>
-    </string-array>
-
-    <string-array name="list_preference_entry_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
-    <string-array name="multi_select_list_preference_default_value" />
-
-    <string name="pref_title_system_sync_settings">System sync settings</string>
 
     <!-- Example settings for Notifications -->
-    <string name="pref_header_notifications">Notifications</string>
 
-    <string name="pref_title_new_message_notifications">New message notifications</string>
-
-    <string name="pref_title_ringtone">Ringtone</string>
-    <string name="pref_ringtone_silent">Silent</string>
-
-    <string name="pref_title_vibrate">Vibrate</string>
     <string name="add_event">Add Event</string>
     <string name="add_event_image">Add Event Image</string>
     <string name="sub_event_name">Sub Event Name</string>
     <string name="sub_event_description">Sub Event Description</string>
-    <string name="sub_event_edit_text">Sub Event Name</string>
-    <string name="start_time">Start Time</string>
-    <string name="end_time">End Time</string>
-    <string name="sub_event_description_edit_text">Sub Event Description</string>
-    <string name="sub_event_name_edit_text">Sub Event Name</string>
-    <string name="_sub_event_name_edit_text">Enter Sub Event Name</string>
     <string name="enter_sub_event_name">Enter Sub Event Name</string>
     <string name="select_date_text_view">Select Date</string>
     <string name="select_start_time">Select Start Time</string>
@@ -249,6 +151,4 @@
     <string name="add_map">Add Map</string>
     <string name="select_map">Select Map</string>
     <string name="string_maps">Maps</string>
-    <string name="maps_array_list">mapsArrayList</string>
-    <string name="maps_array_list_string">mapsArrayList</string>
 </resources>
