@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -24,6 +27,8 @@ import com.umflint.csc.earthmattersv2.utilities.Utilities;
 import com.umflint.csc.earthmattersv2.ux.ExpandedCardActivity;
 
 import java.util.ArrayList;
+
+import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
 /**
  * Created by Benjamin on 3/14/2017.
@@ -75,7 +80,7 @@ public class MapCardContentAdapter extends FirebaseRecyclerAdapter<MapModel, Map
         viewHolder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //todo implement map popup
+                loadPhoto(viewHolder.imageView, 1000,1000);
             }
         });
 
@@ -103,5 +108,31 @@ public class MapCardContentAdapter extends FirebaseRecyclerAdapter<MapModel, Map
                 return false;
             }
         });
+    }
+
+    private void loadPhoto(ImageView imageView, int width, int height) {
+
+        ImageView tempImageView = imageView;
+
+
+        AlertDialog.Builder imageDialog = new AlertDialog.Builder(activity);
+        LayoutInflater inflater = (LayoutInflater) activity.getSystemService(LAYOUT_INFLATER_SERVICE);
+
+        View layout = inflater.inflate(R.layout.custom_fullimage_dialog,
+                (ViewGroup) activity.findViewById(R.id.layout_root));
+        ImageView image = (ImageView) layout.findViewById(R.id.fullimage);
+        image.setImageDrawable(tempImageView.getDrawable());
+        imageDialog.setView(layout);
+        imageDialog.setPositiveButton("OK", new DialogInterface.OnClickListener(){
+
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+
+        });
+
+
+        imageDialog.create();
+        imageDialog.show();
     }
 }

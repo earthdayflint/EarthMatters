@@ -17,7 +17,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
             card_view:srcCompat="@drawable/ed"
             android:id="@+id/cardFragmentMapImageView"
             android:layout_weight="1.85"
