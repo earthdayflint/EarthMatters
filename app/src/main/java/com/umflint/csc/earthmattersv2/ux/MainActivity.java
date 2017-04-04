@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_qrscan) {
             IntentIntegrator integrator = new IntentIntegrator(activity);
             integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-            integrator.setPrompt(getString(R.string.scanPrompt));
+            //integrator.setPrompt(getString(R.string.scanPrompt));
             integrator.setCameraId(0);
             integrator.setBeepEnabled(false);
             integrator.setBarcodeImageEnabled(false);
