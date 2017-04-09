@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.View;
 
 
@@ -48,7 +49,6 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
     }
     @Override
     protected void populateViewHolder(final CardViewHolder viewHolder, final EventModel model, final int position) {
-        cover = model.getCoverName();
         StorageReference storageRef = storage.getReferenceFromUrl(context.getString(R.string.firebaseBucket));
         viewHolder.eventNameTextView.setText(model.getEventName());
         StorageReference imageRef = storageRef.child(model.getCoverName());
@@ -77,12 +77,14 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
             @Override
             public boolean onLongClick(View view) {
                 if(isAdmin){
+                    Log.d("COVERNAME", model.getCoverName());
                     new AlertDialog.Builder(view.getContext())
                             .setTitle("Delete entry")
                             .setMessage("Are you sure you want to delete this event?")
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
-                                    database.getReference().child("Events").child(cover).removeValue();
+
+                                    database.getReference().child("Events").child(model.getCoverName()).removeValue();
                                     storageReference.child(cover).delete();
                                 }
                             })
