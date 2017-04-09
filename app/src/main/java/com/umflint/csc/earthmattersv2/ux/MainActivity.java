@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity
                 EventModel.class,
                 R.layout.fragment_card,
                 CardViewHolder.class,
-                myref,
+                myref.orderByChild("startDate"),
                 this,
                 this);
 

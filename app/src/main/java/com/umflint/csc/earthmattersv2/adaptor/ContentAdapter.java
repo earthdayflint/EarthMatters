@@ -29,6 +29,7 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
     private static final String TAG = ContentAdapter.class.getSimpleName();
     private Context context;
     private Activity activity;
+    private DatabaseReference ref;
     private FirebaseStorage storage = FirebaseStorage.getInstance();
     private FirebaseDatabase database;
     private CalendarPopulator calendarPopulator;
@@ -38,7 +39,7 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
 
 
     public ContentAdapter(Class<EventModel> modelClass, int modelLayout,
-                          Class<CardViewHolder> viewHolderClass, DatabaseReference ref, Context context, Activity activity) {
+                          Class<CardViewHolder> viewHolderClass, Query ref, Context context, Activity activity) {
         super(modelClass, modelLayout, viewHolderClass, ref);
         this.context = context;
         this.activity = activity;
@@ -46,9 +47,11 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
         isAdmin = utilities.checkAuth();
         database = utilities.getDataBase();
         storageReference = utilities.getStorageRef();
+
     }
     @Override
     protected void populateViewHolder(final CardViewHolder viewHolder, final EventModel model, final int position) {
+
         StorageReference storageRef = storage.getReferenceFromUrl(context.getString(R.string.firebaseBucket));
         viewHolder.eventNameTextView.setText(model.getEventName());
         StorageReference imageRef = storageRef.child(model.getCoverName());
