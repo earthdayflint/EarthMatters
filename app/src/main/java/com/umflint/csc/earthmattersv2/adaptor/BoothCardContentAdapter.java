@@ -9,8 +9,12 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.StorageReference;
 import com.umflint.csc.earthmattersv2.model.BoothModel;
 import com.umflint.csc.earthmattersv2.utilities.Utilities;
@@ -31,14 +35,15 @@ public class BoothCardContentAdapter extends FirebaseRecyclerAdapter <BoothModel
     private String coverName;
 
     public BoothCardContentAdapter(Class<BoothModel> modelClass, int modelLayout,
-                          Class<BoothCardViewHolder> viewHolderClass, DatabaseReference ref,
-                                   Context context, Activity activity, String coverName) {
+                                   Class<BoothCardViewHolder> viewHolderClass, Query ref,
+                                   Context context, final Activity activity, String coverName) {
         super(modelClass, modelLayout, viewHolderClass, ref);
         this.coverName = coverName;
         this.context = context;
         this.activity = activity;
         isAdmin = utilities.checkAuth();
         database = utilities.getDataBase();
+
         storageReference = utilities.getStorageRef();
 
     }

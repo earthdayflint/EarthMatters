@@ -136,7 +136,7 @@ public class ExpandedCardActivity extends AppCompatActivity {
                 BoothModel.class,
                 R.layout.fragment_booth_card,
                 BoothCardViewHolder.class,
-                boothReference,
+                boothReference.orderByChild("boothNumber"),
                 this,
                 this,
                 coverName);

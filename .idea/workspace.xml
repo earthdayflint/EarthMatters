@@ -13,8 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08a75f09-7108-41c7-9456-0eb88c673588" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/ContentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/ContentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/BoothCardContentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/BoothCardContentAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java" />
     </list>
     <ignored path="EarthMattersv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,18 +49,28 @@
       <file leaf-file-name="ExpandedCardActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+            <state relative-caret-position="335">
+              <caret line="142" column="62" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BoothCardContentAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/BoothCardContentAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="-132">
+              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -2154,14 +2164,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_map_card.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_fullimage_dialog.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_card.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/BoothCardContentAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/MapCardContentAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/ContentAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/BoothCardContentAdapter.java" />
       </list>
     </option>
   </component>
@@ -2734,13 +2744,6 @@
       <option name="presentableId" value="Default" />
       <updated>1479824315787</updated>
     </task>
-    <task id="LOCAL-00006" summary="package changes">
-      <created>1480020039237</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1480020039237</updated>
-    </task>
     <task id="LOCAL-00007" summary="package changes">
       <created>1480186042655</created>
       <option name="number" value="00007" />
@@ -3077,7 +3080,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491772641866</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Updated Ordering of Events">
+      <created>1491773280583</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1491773280583</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3090,7 +3100,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830626" sideWeight="0.50322235" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.337587" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.337587" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830626" sideWeight="0.49677765" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946634" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -3149,7 +3159,8 @@
     <MESSAGE value="Small Fixes" />
     <MESSAGE value="Map Popout implemented" />
     <MESSAGE value="Fixed Delete Errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Delete Errors" />
+    <MESSAGE value="Updated Ordering of Events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Ordering of Events" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3506,17 +3517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/BoothCardContentAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="69" column="84" selection-start-line="69" selection-start-column="84" selection-end-line="69" selection-end-column="84" />
-          <folding>
-            <element signature="e#2922#3309#0" expanded="true" />
-            <element signature="e#3308#3309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/MapCardContentAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -3535,18 +3535,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        <state relative-caret-position="-132">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/ux/ExpandedCardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="335">
+          <caret line="142" column="62" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/umflint/csc/earthmattersv2/adaptor/BoothCardContentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
           <folding />
         </state>
       </provider>
