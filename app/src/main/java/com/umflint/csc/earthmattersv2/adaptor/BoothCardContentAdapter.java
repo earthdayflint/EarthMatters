@@ -67,7 +67,7 @@ public class BoothCardContentAdapter extends FirebaseRecyclerAdapter <BoothModel
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     database.getReference().child("Events").child(coverName).
-                                            child("Booths").child(boothId).removeValue();
+                                            child("Booths").child(model.getBoothId()).removeValue();
                                 }
                             })
                             .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {

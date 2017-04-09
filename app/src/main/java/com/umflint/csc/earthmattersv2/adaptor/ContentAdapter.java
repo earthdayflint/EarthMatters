@@ -14,6 +14,7 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
@@ -34,7 +35,6 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
     private Utilities utilities = new Utilities();
     private boolean isAdmin;
     private StorageReference storageReference;
-    private String cover;
 
 
     public ContentAdapter(Class<EventModel> modelClass, int modelLayout,
@@ -77,7 +77,6 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
             @Override
             public boolean onLongClick(View view) {
                 if(isAdmin){
-                    Log.d("COVERNAME", model.getCoverName());
                     new AlertDialog.Builder(view.getContext())
                             .setTitle("Delete entry")
                             .setMessage("Are you sure you want to delete this event?")
@@ -85,7 +84,7 @@ public class ContentAdapter extends FirebaseRecyclerAdapter<EventModel, CardView
                                 public void onClick(DialogInterface dialog, int which) {
 
                                     database.getReference().child("Events").child(model.getCoverName()).removeValue();
-                                    storageReference.child(cover).delete();
+                                    storageReference.child(model.getCoverName()).delete();
                                 }
                             })
                             .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {

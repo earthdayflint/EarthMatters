@@ -94,7 +94,7 @@ public class MapCardContentAdapter extends FirebaseRecyclerAdapter<MapModel, Map
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     database.getReference().child("Events").child(coverName).child("Maps")
-                                            .child(mapId).removeValue();
+                                            .child(model.getMapId()).removeValue();
                                 }
                             })
                             .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
